@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Domingos Santos, Jr.</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .content {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -44,17 +49,45 @@
           teaching enrichment programs in the District's gifted program, and recently founded Flourish Living, a
           non-profit organization committed to resident flourishing and housing affordability.</p>
       </section>
-      <section class="experience">
-        <h2>Current Experience</h2>
-        <p><strong>Director of Real Estate Tax</strong><br>The Wolff Company</p>
-        <p><strong>Counsel</strong><br>Revel Communities</p>
-        <h2>Prior Experience</h2>
-        <p><strong>State & Local Tax Attorney</strong><br>Santos Law Office, P.L.L.C.</p>
-        <p><strong>State & Local Tax Consultant</strong><br>Jones Lang LaSalle</p>
-        <p><strong>State & Local Tax Consultant</strong><br>Paradigm Tax Group (acquired by Ryan LLC)</p>
-        <p><strong>Commercial Litigation Associate</strong><br>Snell & Wilmer LLP</p>
-        <p><strong>Deputy County Attorney, Property Tax</strong><br>Maricopa County Attorney's Office, Civil Division
-        </p>
+
+      <section class="topics">
+        <h2>Commentary</h2>
+        <select id="topic-select" onchange="showContent()">
+          <option value="">Select a topic</option>
+          <option value="topic1">The Roundup</option>
+        </select>
+
+        <div id="topic1" class="content">
+          <h3>The Roundup</h3>
+          <ul>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--m1rjc/?trackingId=OJiw%2FrcQRN6sja6JviNUYQ%3D%3D" style="border: none;">Issue No. 24-012 | August 23, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--pkc8e/?trackingId=sT5BrrxhRb%2BH%2BGTdW%2FGuCg%3D%3D" style="border: none;">Issue No. 24-011 | August 16, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--lowoc/?trackingId=WuBBtsfgRxqkNyZ2Pay%2B3Q%3D%3D" style="border: none;">Issue No. 24-010 | August 9, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--jnvzc/?trackingId=XokrNZQSQIid06HJZhDNWw%3D%3D" style="border: none;">Issue No. 24-009 | August 5, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--ng4dc/?trackingId=sPpIjk3bQUGhTWGHY1wvwQ%3D%3D" style="border: none;">Issue No. 24-008 | July 24, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--k6ztc/" style="border: none;">Issue No. 24-007 | July 18, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--gdwzc/" style="border: none;">Issue No. 24-006 | July 10, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--rsagc/" style="border: none;">Issue No. 24-005 | June 25, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--ootdc/" style="border: none;">Issue No. 24-004 | June 19, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--bdfsc/" style="border: none;">Issue No. 24-003 | June 5, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--rs9hc/" style="border: none;">Issue No. 24-002 | May 29, 2024</a></li>
+            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--qkjdc/" style="border: none;">Issue No. 24-001 | May 22, 2024</a></li>
+          </ul>
+        </div>
+      </section>
+
+      
+      <section class=" experience">
+                <h2>Current Experience</h2>
+                <p><strong>Director of Real Estate Tax</strong><br>The Wolff Company</p>
+                <p><strong>Counsel</strong><br>Revel Communities</p>
+                <h2>Prior Experience</h2>
+                <p><strong>State & Local Tax Attorney</strong><br>Santos Law Office, P.L.L.C.</p>
+                <p><strong>State & Local Tax Consultant</strong><br>Jones Lang LaSalle</p>
+                <p><strong>State & Local Tax Consultant</strong><br>Paradigm Tax Group (acquired by Ryan LLC)</p>
+                <p><strong>Commercial Litigation Associate</strong><br>Snell & Wilmer LLP</p>
+                <p><strong>Deputy County Attorney, Property Tax</strong><br>Maricopa County Attorney's Office, Civil
+                  Division</p>
       </section>
       <section class="education">
         <h2>Education</h2>
@@ -62,11 +95,27 @@
         <p><strong>B.S. of Business Administration, Finance</strong>, <em>Summa Cum Laude</em><br>Salem State College
         </p>
       </section>
+
     </main>
+
     <footer>
-      <p>&copy; Domingos Santos, Jr. 2024</p>
+      <p>© Domingos Santos, Jr. 2024</p>
     </footer>
   </div>
+
+  <script>
+    function showContent() {
+      var select = document.getElementById("topic-select");
+      var value = select.value;
+      var contents = document.querySelectorAll(".content");
+      contents.forEach(function (content) {
+        content.style.display = "none";
+      });
+      if (value) {
+        document.getElementById(value).style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 </html>
