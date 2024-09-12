@@ -1,88 +1,141 @@
-  body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+      /* Global Styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4; /* Light gray background */
+        padding-top: 0px; /* Add padding to account for fixed navbar */
+      }
 
-  .container {
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 90%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
 
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+      /* Hero Section */
+      .hero-section {
+        text-align: center;
+        padding: 40px 20px;
+        background: #f7c31f; /* Yellow background */
+        color: #000; /* Black text */
+      }
 
-  h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
-  }
+      .hero-section .profile-picture img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 5px solid #000; /* Black border */
+      }
 
-  .title {
-    font-size: 1.2em;
-    color: #777;
-  }
+      .hero-section h1 {
+        margin-top: 20px;
+        font-size: 2.5em;
+      }
 
-  .profile-picture {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
+      .social-links {
+        margin-top: 20px;
+      }
 
-  .profile-picture img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+      .social-links .social-icon {
+        color: #000; /* Black icons */
+        font-size: 1.5em;
+        margin: 0 10px;
+        text-decoration: none;
+      }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+      .social-links .social-icon:hover {
+        color: #888; /* Gray color on hover */
+      }
 
-  section {
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+      /* About Section */
+      .about-section, .commentary-section, .experience-section, .education-section {
+        margin: 10px 0;
+      }
 
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
+      .about-section h2, .commentary-section h2, .experience-section h2, .education-section h2 {
+        color: #000; /* Black headers */
+        font-size: 2em;
+      }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+      .content p, .content ul {
+        color: #333; /* Dark gray text for readability */
+        margin-bottom: 10px;
+      }
 
-  li {
-    margin-bottom: 5px;
-  }
+      .topic-select {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc; /* Light gray border */
+        margin-bottom: 10px;
+      }
 
-  footer {
-    text-align: center;
-    margin-top: 20px;
-  }
+      .experience-item p {
+        margin: 10px 0;
+      }
 
-  a {
-    color: #777;
-    text-decoration: none;
-    padding: 5px;
-    border: 1px solid #777;
-    border-radius: 3px;
-    transition:
+      /* Footer */
+      .footer {
+        background: #000; /* Black background */
+        color: #fff; /* White text */
+        text-align: center;
+        padding: 10px 0;
+        position: relative; /* Ensure the footer is at the bottom */
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .nav-toggle {
+          display: block; /* Show the toggle button on small screens */
+        }
+
+        .nav-menu {
+          display: none; /* Hide menu by default */
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          top: 60px; /* Adjust based on header height */
+          left: 0;
+          background: #000;
+        }
+
+        .nav-menu.active {
+          display: flex; /* Show menu when active */
+        }
+
+        .nav-menu .nav-links {
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+        }
+
+        .nav-menu .nav-links li {
+          margin: 10px 0;
+          margin-left: 0;
+        }
+
+        .hero-section h1 {
+          font-size: 2em;
+        }
+
+        .hero-section .profile-picture img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav-menu .nav-links li {
+          margin: 5px 0;
+        }
+
+        .hero-section {
+          padding: 20px 10px;
+        }
+
+        .hero-section h1 {
+          font-size: 1.5em;
+        }
+
+        .hero-section .profile-picture img {
+          width: 100px;
+          height: 100px;
+        }
+      }

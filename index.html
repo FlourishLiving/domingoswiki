@@ -1,133 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Domingos Santos, Jr.</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .content {
-      display: none;
-    }
-  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <div class="container">
-    <br><br>
-    <div class="profile-picture">
-      <img src="1697497699023.jpg" alt="Headshot">
-    </div>
-    <footer>
-      <a href="mailto:domingos.r.santos.jr@gmail.com">Contact Me</a>
-      <a href="https://www.linkedin.com/in/domingos-santos/">Connect on LinkedIn</a></br></br>
-      <a
-        href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=domingos-santos-jr-45b5b595">Follow
-        on LinkedIn</a>
-      <a
-        href="https://www.realpage.com/podcasts/multifamily-talks/episode-24-domingos-santosvaluation-and-property-taxes-in-multifamily/">Listen
-        on Multifamily Talks</a>
-    </footer>
-    <br><br>
-    <main>
-      <section class="about-me">
-        <h2>About Me</h2>
-        <p>Domingos serves as a property tax director and in-house counsel at The Wolff Company, responsible for
-          advising TWC's development, asset management, investment management and preferred equity platforms on state
-          and local tax issues, and providing legal counsel to Revel Communities, a leading luxury senior independent
-          living platform.</p>
+  <main class="container">
+    <!-- Main content sections -->
+    <section id="hero" class="hero-section" style="padding: 20px;">
+      <div class="profile-picture">
+        <img src="1697497699023.jpg" alt="Domingos Santos, Jr.">
+      </div>
+      <h1>Domingos Santos, Jr.</h1>
+      <div class="social-links">
+        <a href="mailto:domingos.r.santos.jr@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/domingos-santos/" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.realpage.com/podcasts/multifamily-talks/episode-24-domingos-santosvaluation-and-property-taxes-in-multifamily/" aria-label="Listen on Multifamily Talks" class="social-icon"><i class="fas fa-headphones"></i></a>
+      </div>
+    </section>
 
-        <p>Before The Wolff Company, Domingos counseled REITs, private equity firms, and real estate developers and
-          operators on state and local tax compliance and tax reduction strategies. He started his career advising the
-          Maricopa County Assessor's Office through the 2008 financial crisis.</p>
+    <section id="about" class="about-section" style="padding: 20px;">
+      <h2>About Me</h2>
+      <p>Domingos serves as a property tax director and in-house counsel at The Wolff Company, responsible for advising TWC's development, asset management, investment management and preferred equity platforms on state and local tax issues, and providing legal counsel to Revel Communities, a leading luxury senior independent living platform.</p>
+      <p>Before The Wolff Company, Domingos counseled REITs, private equity firms, and real estate developers and operators on state and local tax compliance and tax reduction strategies. He started his career advising the Maricopa County Assessor's Office through the 2008 financial crisis.</p>
+      <p>Active in policymaking, Domingos has worked with the Arizona Legislature on property tax issues, including leading an effort to curtail the authority of local county assessors to sue taxpayers.</p>
+      <p>Domingos volunteers at the Higley Unified School District, advising on budget override and bond proposals and teaching enrichment programs in the District's gifted program, and recently founded Flourish Living, a non-profit organization committed to resident flourishing and housing affordability.</p>
+    </section>
 
-        <p>Active in policymaking, Domingos has worked with the Arizona Legislature on property tax issues, including
-          leading an effort to curtail the authority of local county assessors to sue taxpayers.</p>
+    <section id="commentary" class="commentary-section" style="padding: 20px;">
+      <h2>Commentary</h2>
+      <select id="topic-select" class="topic-select">
+        <option value="">Select a topic</option>
+        <option value="topic1">The Roundup</option>
+        <option value="topic2">Property Tax Reforms for Policymakers</option>
+      </select>
 
-        <p>Domingos volunteers at the Higley Unified School District, advising on budget override and bond proposals and
-          teaching enrichment programs in the District's gifted program, and recently founded Flourish Living, a
-          non-profit organization committed to resident flourishing and housing affordability.</p>
-      </section>
+      <div id="topic1" class="content">
+        <h3>The Roundup</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--fqcyc/">Issue No. 24-013 | September 4, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--m1rjc/?trackingId=OJiw%2FrcQRN6sja6JviNUYQ%3D%3D">Issue No. 24-012 | August 23, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--pkc8e/?trackingId=sT5BrrxhRb%2BH%2BGTdW%2FGuCg%3D%3D">Issue No. 24-011 | August 16, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--lowoc/?trackingId=WuBBtsfgRxqkNyZ2Pay%2B3Q%3D%3D">Issue No. 24-010 | August 9, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--jnvzc/?trackingId=XokrNZQSQIid06HJZhDNWw%3D%3D">Issue No. 24-009 | August 5, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--ng4dc/?trackingId=sPpIjk3bQUGhTWGHY1wvwQ%3D%3D">Issue No. 24-008 | July 24, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--k6ztc/">Issue No. 24-007 | July 18, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--gdwzc/">Issue No. 24-006 | July 10, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--rsagc/">Issue No. 24-005 | June 25, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--ootdc/">Issue No. 24-004 | June 19, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--bdfsc/">Issue No. 24-003 | June 5, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--rs9hc/">Issue No. 24-002 | May 29, 2024</a></li>
+          <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--qkjdc/">Issue No. 24-001 | May 22, 2024</a></li>
+        </ul>
+      </div>
+      <div id="topic2" class="content">
+        <h3>Property Tax Reforms for Policymakers</h3>
+        <p>From Nebraska to Colorado to Indiana, property tax is top of mind for policymakers and political candidates. The following is a set of common-sense reforms for policymakers seeking to create a fair and equitable property tax system.</p>
+        <p><strong>Property tax relief should be broadly distributed to both residential and commercial property taxpayers.</strong> Policymakers should end assessment ratio and tax rate preferences for residential property. These preferences may make for good kitchen-table politics, but the preferences leave taxing jurisdictions susceptible to risk from volatility in commercial property values, e.g., Boston's current troubles amid a slump in commercial property valuations.</p>
+        <p><strong>Shift property tax assessment methodology from a focus on the sales comparison and income approaches to value to the cost approach.</strong> The cost approach to value is less susceptible to the ups and downs of the broader market. States should adopt the Nevada approach to property tax assessment to remove the volatility associated with business cycles.</p>
+        <p><strong>Adopt a taxable value, a cap on taxable value growth, and a taxable value factor to manage equity over time.</strong> Shifting to a cost approach to value is only one step in reforming a property tax system. States should also adopt a taxable value (a value that is the product of the cost approach value conclusion and the current taxable value factor) and a cap on taxable value growth (e.g., Arizona's 5% cap or Oregon's 3% cap).</p>
+        <p>This type of system will almost always result in the net assessed taxable value growing year-on-year which provides tax rate setting authorities the political room to increase the overall levy while decreasing the tax rate or holding it flat. This is particularly useful during downturns in the business cycle. For example, Maricopa County was able to reduce its tax rate this year despite a reduction in market values since the net assessed taxable value increased year-on-year.</p>
+        <p>The last piece, a taxable value factor to manage equity over time, is crucial. Maricopa County, AZ does this well, especially when considering equity across a property category, construction class and rank, and effective age.</p>
+        <p>These reforms create an <strong>equitable distribution of the property tax burden across all taxpayers</strong> and provide a <strong>predictable path for assessments and tax bills</strong>, thereby creating a climate for private sector investment and the resulting growth in the property tax base.</p>
+      </div>
+    </section>
 
-      <section class="topics">
-        <h2>Commentary</h2>
-        <select id="topic-select" onchange="showContent()">
-          <option value="">Select a topic</option>
-          <option value="topic1">The Roundup</option>
-          <option value="topic2">Property Tax Reforms for Policymakers</option>
-        </select>
+    <section id="experience" class="experience-section" style="padding: 20px;">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Current Experience</h3>
+        <p><strong>Director of Real Estate Tax</strong><br>The Wolff Company</p>
+        <p><strong>Counsel</strong><br>Revel Communities</p>
+      </div>
+      <div class="experience-item">
+        <h3>Prior Experience</h3>
+        <p><strong>State & Local Tax Attorney</strong><br>Santos Law Office, P.L.L.C.</p>
+        <p><strong>State & Local Tax Consultant</strong><br>Jones Lang LaSalle</p>
+        <p><strong>State & Local Tax Consultant</strong><br>Paradigm Tax Group (acquired by Ryan LLC)</p>
+        <p><strong>Commercial Litigation Associate</strong><br>nell & Wilmer LLP</p>
+        <p><strong>Deputy County Attorney, Property Tax</strong><br>Maricopa County Attorney's Office, Civil Division</p>
+      </div>
+    </section>
 
-        <div id="topic1" class="content">
-          <h3>The Roundup</h3>
-          <ul>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--fqcyc/" style="border: none;">Issue No. 24-013 | September 4, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--m1rjc/?trackingId=OJiw%2FrcQRN6sja6JviNUYQ%3D%3D" style="border: none;">Issue No. 24-012 | August 23, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--pkc8e/?trackingId=sT5BrrxhRb%2BH%2BGTdW%2FGuCg%3D%3D" style="border: none;">Issue No. 24-011 | August 16, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--lowoc/?trackingId=WuBBtsfgRxqkNyZ2Pay%2B3Q%3D%3D" style="border: none;">Issue No. 24-010 | August 9, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--jnvzc/?trackingId=XokrNZQSQIid06HJZhDNWw%3D%3D" style="border: none;">Issue No. 24-009 | August 5, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--ng4dc/?trackingId=sPpIjk3bQUGhTWGHY1wvwQ%3D%3D" style="border: none;">Issue No. 24-008 | July 24, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--k6ztc/" style="border: none;">Issue No. 24-007 | July 18, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--gdwzc/" style="border: none;">Issue No. 24-006 | July 10, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--rsagc/" style="border: none;">Issue No. 24-005 | June 25, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--ootdc/" style="border: none;">Issue No. 24-004 | June 19, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--bdfsc/" style="border: none;">Issue No. 24-003 | June 5, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--rs9hc/" style="border: none;">Issue No. 24-002 | May 29, 2024</a></li>
-            <li><a href="https://www.linkedin.com/pulse/roundup-domingos-santos-jr--qkjdc/" style="border: none;">Issue No. 24-001 | May 22, 2024</a></li>
-          </ul>
-        </div>
-        <div id="topic2" class="content">
-          <h3>Property Tax Reforms for Policymakers</h3>August 2024<br>
-          <p>From Nebraska to Colorado to Indiana, property tax is top of mind for policymakers and political candidates. The following is a set of common-sense reforms for policymakers seeking to create a fair and equitable property tax system.</p>
-          <p><strong>Property tax relief should be broadly distributed to both residential and commercial property taxpayers.</strong> Policymakers should end assessment ratio and tax rate preferences for residential property. These preferences may make for good kitchen-table politics, but the preferences leave taxing jurisdictions susceptible to risk from volatility in commercial property values, e.g., Boston's current troubles amid a slump in commercial property valuations.</p>
-          <p><strong>Shift property tax assessment methodology from a focus on the sales comparison and income approaches to value to the cost approach.</strong> The cost approach to value is less susceptible to the ups and downs of the broader market. States should adopt the Nevada approach to property tax assessment to remove the volatility associated with business cycles.</p>
-          <p><strong>Adopt a taxable value, a cap on taxable value growth, and a taxable value factor to manage equity over time.</strong> Shifting to a cost approach to value is only one step in reforming a property tax system. States should also adopt a taxable value (a value that is the product of the cost approach value conclusion and the current taxable value factor) and a cap on taxable value growth (e.g., Arizona's 5% cap or Oregon's 3% cap).</p>
-          <p>This type of system will almost always result in the net assessed taxable value growing year-on-year which provides tax rate setting authorities the political room to increase the overall levy while decreasing the tax rate or holding it flat. This is particularly useful during downturns in the business cycle. For example, Maricopa County was able to reduce its tax rate this year despite a reduction in market values since the net assessed taxable value increased year-on-year.</p>
-          <p>The last piece, a taxable value factor to manage equity over time, is crucial. Maricopa County, AZ does this well, especially when considering equity across a property category, construction class and rank, and effective age.</p>
-          <p>These reforms create an <strong>equitable distribution of the property tax burden across all taxpayers</strong> and provide a <strong>predictable path for assessments and tax bills</strong>, thereby creating a climate for private sector investment and the resulting growth in the property tax base.</p>
-        </div>
-      </section>
+    <section id="education" class="education-section" style="padding: 20px;">
+      <h2>Education</h2>
+      <p><strong>Juris Doctor</strong>, <em>Summa Cum Laude</em><br>New England School of Law</p>
+      <p><strong>B.S. of Business Administration, Finance</strong>, <em>Summa Cum Laude</em><br>Salem State College</p>
+    </section>
+  </main>
 
-      
-      <section class=" experience">
-                <h2>Current Experience</h2>
-                <p><strong>Director of Real Estate Tax</strong><br>The Wolff Company</p>
-                <p><strong>Counsel</strong><br>Revel Communities</p>
-                <h2>Prior Experience</h2>
-                <p><strong>State & Local Tax Attorney</strong><br>Santos Law Office, P.L.L.C.</p>
-                <p><strong>State & Local Tax Consultant</strong><br>Jones Lang LaSalle</p>
-                <p><strong>State & Local Tax Consultant</strong><br>Paradigm Tax Group (acquired by Ryan LLC)</p>
-                <p><strong>Commercial Litigation Associate</strong><br>Snell & Wilmer LLP</p>
-                <p><strong>Deputy County Attorney, Property Tax</strong><br>Maricopa County Attorney's Office, Civil
-                  Division</p>
-      </section>
-      <section class="education">
-        <h2>Education</h2>
-        <p><strong>Juris Doctor</strong>, <em>Summa Cum Laude</em><br>New England School of Law</p>
-        <p><strong>B.S. of Business Administration, Finance</strong>, <em>Summa Cum Laude</em><br>Salem State College
-        </p>
-      </section>
-
-    </main>
-
-    <footer>
-      <p>© Domingos Santos, Jr. 2024</p>
-    </footer>
-  </div>
-
-  <script>
-    function showContent() {
-      var select = document.getElementById("topic-select");
-      var value = select.value;
-      var contents = document.querySelectorAll(".content");
-      contents.forEach(function (content) {
-        content.style.display = "none";
-      });
-      if (value) {
-        document.getElementById(value).style.display = "block";
-      }
-    }
-  </script>
+  <footer class="footer">
+    <p>© Domingos Santos, Jr. 2024</p>
+  </footer>
 </body>
-
 </html>
