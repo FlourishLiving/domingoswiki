@@ -19,9 +19,9 @@
 
       .hero-section .profile-picture img {
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        border: 5px solid #000; /* Black border */
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000; /* Black border */
       }
 
       .hero-section h1 {
