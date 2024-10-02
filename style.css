@@ -4,8 +4,10 @@
         color: #333;
         margin: 0;
         padding: 0;
-        background: #f4f4f4; /* Light gray background */
-        padding-top: 0px; /* Add padding to account for fixed navbar */
+        background: #f4f4f4;
+        /* Light gray background */
+        padding-top: 0px;
+        /* Add padding to account for fixed navbar */
       }
 
 
@@ -13,15 +15,18 @@
       .hero-section {
         text-align: center;
         padding: 40px 20px;
-        background: #f7c31f; /* Yellow background */
-        color: #000; /* Black text */
+        background: #f7c31f;
+        /* Yellow background */
+        color: #000;
+        /* Black text */
       }
 
       .hero-section .profile-picture img {
         border-radius: 50%;
         width: 300px;
         height: 300px;
-        border: 1px solid #000; /* Black border */
+        border: 1px solid #000;
+        /* Black border */
       }
 
       .hero-section h1 {
@@ -34,28 +39,39 @@
       }
 
       .social-links .social-icon {
-        color: #000; /* Black icons */
+        color: #000;
+        /* Black icons */
         font-size: 1.5em;
         margin: 0 10px;
         text-decoration: none;
       }
 
       .social-links .social-icon:hover {
-        color: #888; /* Gray color on hover */
+        color: #888;
+        /* Gray color on hover */
       }
 
       /* About Section */
-      .about-section, .commentary-section, .experience-section, .education-section {
+      .about-section,
+      .commentary-section,
+      .experience-section,
+      .education-section {
         margin: 10px 0;
       }
 
-      .about-section h2, .commentary-section h2, .experience-section h2, .education-section h2 {
-        color: #000; /* Black headers */
+      .about-section h2,
+      .commentary-section h2,
+      .experience-section h2,
+      .education-section h2 {
+        color: #000;
+        /* Black headers */
         font-size: 2em;
       }
 
-      .content p, .content ul {
-        color: #333; /* Dark gray text for readability */
+      .content p,
+      .content ul {
+        color: #333;
+        /* Dark gray text for readability */
         margin-bottom: 10px;
       }
 
@@ -63,7 +79,8 @@
         padding: 10px;
         font-size: 16px;
         border-radius: 5px;
-        border: 1px solid #ccc; /* Light gray border */
+        border: 1px solid #ccc;
+        /* Light gray border */
         margin-bottom: 10px;
       }
 
@@ -71,33 +88,105 @@
         margin: 10px 0;
       }
 
+
+      /* AI Chat Bots Section */
+      .ai-chat-bots-section {
+        margin: 10px 0;
+        padding: 20px;
+        background: #fff;
+        /* White background to match other sections */
+        border: 1px solid #ccc;
+        /* Light gray border for uniformity */
+      }
+
+      .ai-chat-bots-section h2 {
+        color: #000;
+        /* Black headers */
+        font-size: 2em;
+        /* Consistent with other sections */
+        margin-bottom: 20px;
+      }
+
+      .ai-chat-bots-section table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        /* Ensures table follows the column width specified */
+      }
+
+      .ai-chat-bots-section td {
+        padding: 20px;
+        vertical-align: top;
+      }
+
+      .ai-chat-bots-section td div {
+        background: #f4f4f4;
+        /* Light gray background for the content boxes */
+        padding: 10px;
+        border: 1px solid #ddd;
+        /* Light border around content boxes */
+        border-radius: 5px;
+        /* Slight rounding of corners */
+      }
+
+      .ai-chat-bots-section td div strong {
+        color: #000;
+        /* Bold text color */
+        font-size: 1.2em;
+        /* Slightly larger than normal text */
+      }
+
+      .ai-chat-bots-section td div p {
+        color: #333;
+        /* Dark gray text for readability */
+        margin: 10px 0;
+      }
+
+      /* Responsive Styles for AI Chat Bots Section */
+      @media (max-width: 768px) {
+        .ai-chat-bots-section td {
+          width: 100%;
+          /* On mobile devices, the column will take full width */
+          padding: 10px;
+        }
+      }
+
+
+
       /* Footer */
       .footer {
-        background: #000; /* Black background */
-        color: #fff; /* White text */
+        background: #000;
+        /* Black background */
+        color: #fff;
+        /* White text */
         text-align: center;
         padding: 10px 0;
-        position: relative; /* Ensure the footer is at the bottom */
+        position: relative;
+        /* Ensure the footer is at the bottom */
       }
 
       /* Responsive Styles */
       @media (max-width: 768px) {
         .nav-toggle {
-          display: block; /* Show the toggle button on small screens */
+          display: block;
+          /* Show the toggle button on small screens */
         }
 
         .nav-menu {
-          display: none; /* Hide menu by default */
+          display: none;
+          /* Hide menu by default */
           flex-direction: column;
           width: 100%;
           position: absolute;
-          top: 60px; /* Adjust based on header height */
+          top: 60px;
+          /* Adjust based on header height */
           left: 0;
           background: #000;
         }
 
         .nav-menu.active {
-          display: flex; /* Show menu when active */
+          display: flex;
+          /* Show menu when active */
         }
 
         .nav-menu .nav-links {
