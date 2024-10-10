@@ -1,230 +1,184 @@
-      /* Global Styles */
-      body {
-        font-family: 'Arial', sans-serif;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        background: #f4f4f4;
-        /* Light gray background */
-        padding-top: 0px;
-        /* Add padding to account for fixed navbar */
-      }
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #222; /* Dark gray text for readability */
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5; /* Light gray background */
+}
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-      /* Hero Section */
-      .hero-section {
-        text-align: center;
-        padding: 40px 20px;
-        background: #f7c31f;
-        /* Yellow background */
-        color: #000;
-        /* Black text */
-      }
+a:hover {
+  text-decoration: underline;
+}
 
-      .hero-section .profile-picture img {
-        border-radius: 50%;
-        width: 300px;
-        height: 300px;
-        border: 1px solid #000;
-        /* Black border */
-      }
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff; /* White background for hero */
+  color: #000; /* Black text */
+}
 
-      .hero-section h1 {
-        margin-top: 20px;
-        font-size: 2.5em;
-      }
+.hero-section .profile-picture img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #333; /* Darker border for contrast */
+}
 
-      .social-links {
-        margin-top: 20px;
-      }
+.hero-section h1 {
+  margin-top: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
 
-      .social-links .social-icon {
-        color: #000;
-        /* Black icons */
-        font-size: 1.5em;
-        margin: 0 10px;
-        text-decoration: none;
-      }
+.social-links {
+  margin-top: 20px;
+}
 
-      .social-links .social-icon:hover {
-        color: #888;
-        /* Gray color on hover */
-      }
+.social-links .social-icon {
+  color: #000; /* Black icons */
+  font-size: 1.5em;
+  margin: 0 10px;
+}
 
-      /* About Section */
-      .about-section,
-      .commentary-section,
-      .experience-section,
-      .education-section {
-        margin: 10px 0;
-      }
+/* About Section */
+.about-section {
+  padding: 40px 20px;
+  background: #f9f9f9; /* Slightly darker light gray */
+}
 
-      .about-section h2,
-      .commentary-section h2,
-      .experience-section h2,
-      .education-section h2 {
-        color: #000;
-        /* Black headers */
-        font-size: 2em;
-      }
+.about-section h2 {
+  color: #000; /* Black headers */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
-      .content p,
-      .content ul {
-        color: #333;
-        /* Dark gray text for readability */
-        margin-bottom: 10px;
-      }
+.about-section p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
 
-      .topic-select {
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        /* Light gray border */
-        margin-bottom: 10px;
-      }
+/* Commentary Section */
+.commentary-section {
+  padding: 40px 20px;
+  background: #fff; /* White background */
+}
 
-      .experience-item p {
-        margin: 10px 0;
-      }
+.commentary-section h2 {
+  color: #000;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
+.topic-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa; /* Light gray border */
+  margin-bottom: 20px;
+  background: #f5f5f5; /* Light gray background */
+}
 
-      /* AI Chat Bots Section */
-      .ai-chat-bots-section {
-        margin: 10px 0;
-        padding: 20px;
-        background: #fff;
-        /* White background to match other sections */
-        border: 1px solid #ccc;
-        /* Light gray border for uniformity */
-      }
+.content {
+  display: none;
+}
 
-      .ai-chat-bots-section h2 {
-        color: #000;
-        /* Black headers */
-        font-size: 2em;
-        /* Consistent with other sections */
-        margin-bottom: 20px;
-      }
+.content h3 {
+  color: #000;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
 
-      .ai-chat-bots-section table {
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: fixed;
-        /* Ensures table follows the column width specified */
-      }
+.content ul {
+  padding-left: 20px;
+}
 
-      .ai-chat-bots-section td {
-        padding: 20px;
-        vertical-align: top;
-      }
+.content li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
 
-      .ai-chat-bots-section td div {
-        background: #f4f4f4;
-        /* Light gray background for the content boxes */
-        padding: 10px;
-        border: 1px solid #ddd;
-        /* Light border around content boxes */
-        border-radius: 5px;
-        /* Slight rounding of corners */
-      }
+/* AI Chat Bots Section */
+.ai-chat-bots-section {
+  padding: 40px 20px;
+  background: #f9f9f9; /* Slightly darker light gray */
+}
 
-      .ai-chat-bots-section td div strong {
-        color: #000;
-        /* Bold text color */
-        font-size: 1.2em;
-        /* Slightly larger than normal text */
-      }
+.ai-chat-bots-section h2 {
+  color: #000;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
-      .ai-chat-bots-section td div p {
-        color: #333;
-        /* Dark gray text for readability */
-        margin: 10px 0;
-      }
+.chat-bots-gallery-wrapper {
+  position: relative;
+  max-width: 600px; /* Adjust width as needed */
+  margin: auto;
+  overflow: hidden;
+}
 
-      /* Responsive Styles for AI Chat Bots Section */
-      @media (max-width: 768px) {
-        .ai-chat-bots-section td {
-          width: 100%;
-          /* On mobile devices, the column will take full width */
-          padding: 10px;
-        }
-      }
+.chat-bots-gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
+.chat-bot-box {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
 
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5em;
+  z-index: 1;
+}
 
-      /* Footer */
-      .footer {
-        background: #000;
-        /* Black background */
-        color: #fff;
-        /* White text */
-        text-align: center;
-        padding: 10px 0;
-        position: relative;
-        /* Ensure the footer is at the bottom */
-      }
+.gallery-nav.prev {
+  left: 0;
+}
 
-      /* Responsive Styles */
-      @media (max-width: 768px) {
-        .nav-toggle {
-          display: block;
-          /* Show the toggle button on small screens */
-        }
+.gallery-nav.next {
+  right: 0;
+}
 
-        .nav-menu {
-          display: none;
-          /* Hide menu by default */
-          flex-direction: column;
-          width: 100%;
-          position: absolute;
-          top: 60px;
-          /* Adjust based on header height */
-          left: 0;
-          background: #000;
-        }
+/* Footer */
+.footer {
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px 0;
+}
 
-        .nav-menu.active {
-          display: flex;
-          /* Show menu when active */
-        }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2em;
+  }
 
-        .nav-menu .nav-links {
-          flex-direction: column;
-          width: 100%;
-          text-align: center;
-        }
+  .hero-section .profile-picture img {
+    width: 150px;
+    height: 150px;
+  }
 
-        .nav-menu .nav-links li {
-          margin: 10px 0;
-          margin-left: 0;
-        }
+  .chat-bots-gallery-wrapper {
+    max-width: 100%;
+  }
 
-        .hero-section h1 {
-          font-size: 2em;
-        }
-
-        .hero-section .profile-picture img {
-          width: 120px;
-          height: 120px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .nav-menu .nav-links li {
-          margin: 5px 0;
-        }
-
-        .hero-section {
-          padding: 20px 10px;
-        }
-
-        .hero-section h1 {
-          font-size: 1.5em;
-        }
-
-        .hero-section .profile-picture img {
-          width: 100px;
-          height: 100px;
-        }
-      }
+  .chat-bot-box {
+    padding: 10px;
+  }
+}
